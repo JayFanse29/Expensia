@@ -1,0 +1,4 @@
+.PendingTransactionsContainer{
+    display: flex;
+    flex-direction: column;
+}

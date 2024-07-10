@@ -1,0 +1,203 @@
+.DashboardContainer{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid orange; */
+}
+
+.DashboardNavBar{
+    width: 100%;
+    height: 7%;
+    background-image: url("/public/money.jpg");
+}
+
+.DashboardNavBarLayer{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 168, 112, 0.777);
+}
+
+.DashboardNavBarLeftChild{
+    display: flex;
+    list-style: none;
+}
+
+.DashboardNavBarRightChild{
+    display: flex;
+    list-style: none;
+}
+
+.DashboardNavBarLeftChild li{
+    display: flex;
+}
+
+#DashboardLogo{
+    /* background-image: url("/public/logo.png");
+    background-size: contain;
+    background-position: center;
+    padding: 1.8vw 2.5vw;
+    background-repeat: no-repeat;
+    margin-left: 1vw;
+    margin-right: 0.5vw; */
+
+    margin: 0.4vw;
+    border: none;
+    color: white ;
+    font-weight: bold;
+    padding: 0.4vw 1vw;
+    font-size: 1.2rem;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+.DashboardNavBarRightChild li{
+    display: flex;
+}
+
+#DashboardUsername{
+    margin: 0.4vw;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.4vw 1vw;
+    font-size: 1.2rem;
+    margin-left: 0vw;
+    padding-left: 0.3vw;
+}
+
+.DashboardNavBarRightChild li:hover{
+    cursor: pointer;
+}
+
+#DashboardProfile{
+    background-image: url(/public/profile.png);
+    padding: 0.8vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#logout{
+    background-image: url(/public/logout.png);
+    padding: 0.9vw;
+    margin: 0vw 0.6vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.DashboardMainContainer{
+    /* border: 2px solid black; */
+    display: flex;
+    height: 93%;
+}
+
+.DashboardLeftPanelContainer{
+    position: relative;
+    width: 20%;
+    border-right: 2px solid rgba(1, 168, 112, 0.777);
+    height: 100%;
+    overflow: auto;
+}
+
+.MainPanelContainer{
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+
+.PanelTitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw 0.6vw;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.PanelTitle:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+#FriendsDropDown,
+#GroupsDropDown{
+    padding: 0.6vw;
+    margin-right: 0.2vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#createFriendBtn,
+#createGroupBtn{
+    padding: 0.7vw;
+    background-image: url('/public/create.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+}
+
+#createFriendBtn:hover,
+#createGroupBtn:hover{
+    cursor: pointer;
+}
+
+.PanelTitleLeftComponent{
+    width: 100%;
+}
+
+.PanelCreateGroup{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    gap: 0.4vw;
+    padding: 0.2vw 1.6vw;
+    padding-right: 0.5vw;
+    /* border: 2px solid red; */
+}
+
+.PanelCreateGroup input{
+    font-size: 1rem;
+    padding: 0.2vw;
+    border-radius: 4px;
+    border: 2px solid rgb(0, 186, 124);
+}
+
+.PanelCreateGroup #createGroup{
+    border: none;
+    background-color: rgb(0, 186, 124);
+    background-image: url(/public/tick.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.2vw;
+    color: white;
+    border-radius: 4px;
+    padding: 0.4vw 0.6vw;
+}
+.PanelCreateGroup #cancelGroup{
+    border: none;
+    background-color: rgb(0, 186, 124);
+    background-image: url(/public/close-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.2vw;
+    color: white;
+    border-radius: 4px;
+    padding: 0.4vw 0.6vw;
+}
+
+#cancelGroup:hover,
+#createGroup:hover{
+    cursor: pointer;
+    background-color: rgb(1, 145, 97);
+
+}
+

@@ -1,0 +1,164 @@
+.GroupDisplayMain{
+    position: relative;
+    display: flex;
+    height: 100%;   
+    /* border: 2px solid red;  */
+}
+
+.GroupDisplayLeft{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 1vw;
+}
+
+.GroupDisplayRight{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.GroupTitle{
+    width: 100%;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.GroupTitle button{
+    position: absolute;
+    top: 1vw;
+    right: 0px;
+
+    background-color: rgb(0, 186, 124);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8vw 1.2vw;
+}
+
+.GroupTitle button:hover{
+    cursor: pointer;
+    background-color: rgb(1, 145, 97);
+}
+
+.GroupName{
+    font-size: 3rem;
+}
+
+.GroupCreated{
+    position: relative;
+    color: gray;
+}
+
+.GroupMemberTitle{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.GroupMemberList{
+    overflow: auto;
+    padding: 0.5vw 0vw;
+}
+
+.GroupMemberHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.GroupMemberHeader button{
+    background-image: url(/public/invite.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    padding: 0.6vw;
+    border: none;
+}
+
+.GroupMemberHeader button:hover{
+    cursor: pointer;
+}
+
+.GroupTransactionContainer{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* border: 2px solid red; */
+    padding: 0.2vw;
+    height: 100%;
+    box-sizing: border-box;
+    margin-top: 3vw;
+    overflow: auto;
+}
+
+.TransactionDisplayContainer{
+    position: relative;
+    background-color: aliceblue;
+    box-shadow : 1px 1px 2px black;
+    z-index: 1;
+    /* height: 100%; */
+    overflow: auto;
+}
+
+.TransactionSelectorContainer{
+    background-color: whitesmoke;
+    height: fit-content;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* border: 2px solid red; */
+}
+
+.TransactionSelector{
+    /* background-color: aliceblue; */
+    padding: 0.8vw 0.4vw;
+    /* border: 2px solid black; */
+    font-size: 1.1rem;
+}
+
+.TransactionSelector:hover{
+    cursor: pointer;
+}
+
+.PanelInviteFriend{
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    gap: 0.4vw;
+    padding: 0.2vw 0vw;
+    /* padding-right: 0.5vw; */
+    /* border: 2px solid red; */
+}
+
+.PanelInviteFriend input{
+    font-size: 1rem;
+    padding: 0.3vw 0.2vw;
+    border-radius: 4px;
+    border: 2px solid rgb(0, 186, 124);
+}
+
+.PanelInviteFriend #createGroup{
+    border: none;
+    background-color: rgb(0, 186, 124);
+    background-image: url(/public/tick.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.2vw;
+    color: white;
+    border-radius: 4px;
+    padding: 0.4vw 0.6vw;
+}
+.PanelInviteFriend #cancelGroup{
+    border: none;
+    background-color: rgb(0, 186, 124);
+    background-image: url(/public/close-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.2vw;
+    color: white;
+    border-radius: 4px;
+    padding: 0.4vw 0.6vw;
+}

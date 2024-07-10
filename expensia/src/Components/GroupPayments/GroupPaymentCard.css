@@ -1,0 +1,98 @@
+.GroupPaymentCard{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(255, 179, 179); */
+    border-bottom: 1px solid black;
+}
+
+.GroupPaymentPrimary{
+    padding: 0.5vw;
+    display: flex;
+}
+
+.GroupPaymentSecondary{
+    display: flex;
+    padding: 0.5vw;
+    flex-direction: column;
+}
+
+.GroupPaymentPrimary:hover{
+    cursor: pointer;
+}
+
+.GroupPaymentDate{
+    width: 8%;
+    height: 6%;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid black;
+}
+
+.GroupPaymentDay{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 0px;
+    /* border: 2px solid yellow; */
+}
+
+.GroupPaymentMonth{
+    font-size: 0.9rem;
+    position: relative;
+    padding: 0px;
+    display: flex;
+    top: -0.3vw;
+    justify-content: center;
+}
+
+.GroupPaymentInfo{
+    width: 77%;
+    /* border: 2px solid gray; */
+    padding: 0vw 1vw;
+}
+
+.GroupPaymentDescription{
+    font-size: 1.7rem;
+}
+
+.GroupPaymentPayee{
+    font-size: 0.8rem;
+}
+
+.GroupPaymentAmountSection{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.GroupPaymentAmount{
+    font-size: 1.4rem;
+}
+
+.GroupPaymentAmountSubtitle{
+    font-size: 0.8rem;
+}
+
+.ContributorHeading{
+    margin-top: 1vw;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.ContributorHeading div{
+    display: flex;
+    justify-content: center;
+}
+
+.Contribution{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.Contribution div{
+    display: flex;
+    justify-content: center ;
+}

@@ -1,0 +1,11 @@
+.GroupMemberBox{
+    margin-bottom: 0.5vw;
+}
+
+.GroupMemberName{
+    font-size: 1.2rem;
+}
+
+.GroupMemberStatus{
+    color: gray;
+}

@@ -1,0 +1,10 @@
+.GroupPaymentsContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.MonthHeader{
+    font-size: 0.8rem;
+    padding: 0.2vw 0.1vw;
+    background-color: whitesmoke;
+}

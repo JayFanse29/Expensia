@@ -1,0 +1,31 @@
+.ListItem{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1vw;
+}
+
+.ListItem:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.ListItemName{
+    padding: 0.4vw 2vw;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+
+.ListItem button{
+    padding: 0.7vw;
+    border: none;
+    background-image: url(/public/delete.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ListItem button:hover{
+    cursor: pointer;
+}

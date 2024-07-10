@@ -1,0 +1,310 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    border-bottom: 1px solid  rgba(1, 168, 112, 0.777);
+}
+
+.navBarLeftChild{
+    display: flex;
+    list-style: none;
+}
+
+.navBarRightChild{
+    display: flex;
+    list-style: none;
+}
+
+.navBarLeftChild li{
+    display: flex;
+}
+
+.navBarLeftChild li a{
+    text-decoration: none;
+    color: rgb(0, 186, 124);
+    padding: 1vw 1vw;
+    font-size: 1rem;
+}
+
+#logo{
+    background-image: url("/public/logo.png");
+    background-size: contain;
+    background-position: center;
+    padding: 0.9vw 2.5vw;
+    background-repeat: no-repeat;
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+}
+
+#logoAnchor{
+    padding: 0vw;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+.navBarRightChild li{
+    display: flex;
+}
+
+.navBarRightChild li button{
+    margin: 0.8vw;
+    background-color: white;
+    border: 2px solid rgb(0, 186, 124);
+    border-radius: 6px;
+    color: rgb(0, 186, 124);
+    padding: 0.4vw 1.5vw;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.navBarRightChild li :hover{
+    cursor: pointer;
+    background-color: rgb(0, 186, 124);
+    color: white;
+    
+}
+
+.mainBanner{
+    position: relative;
+    background-image: url("/public/money.jpg");
+    background-attachment: fixed;
+}
+
+.mainBannerLayer{
+    padding: 0px 1vw;
+    padding-top: 1vw;
+    padding-bottom: 16vw;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(1, 168, 112, 0.777);
+}
+
+.appName{
+    color: white;
+    font-size: 8rem;
+    font-weight: bolder;
+}
+
+.appSubName{
+    position: relative;
+    color: white;
+    font-size: 3.5rem;
+    top: -1.5vw;
+}
+
+.getStarted{
+    display: flex;
+    padding: 1vw;
+}
+
+.getStarted button{
+    border: 2px solid rgb(0, 186, 124);
+    padding: 0.8vw 3.5vw;
+    font-size: 1.6rem;
+    background-color: white;
+    border-radius: 6px;
+    color: rgb(0, 186, 124);
+    transition: all 0.2s;
+}
+
+.getStarted :hover{
+    cursor: pointer;
+    background-color: rgb(0, 186, 124);
+    color: white;
+}
+
+.featureTitle{
+    font-size: 3rem;
+    color: rgb(0, 186, 124);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+}
+
+.featureMain{
+    position: relative;
+    background-image: url("/public/money.jpg");
+    background-attachment: fixed;
+    
+}
+
+.featureMainLayer{
+    width: 100%;
+    height: 100%;
+    margin-top: 16vw;
+    padding-bottom: 2vw;
+    background-color: rgba(1, 168, 112, 0.777);
+}
+
+.featureCardGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0px 10vw;
+    position: relative;
+    top: -13vw;
+    gap: 2vw;
+}
+
+.featureCard1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgb(138, 138, 138) 0px 0px 10px;
+    padding: 1.5vw;
+    margin-bottom: 4vw;
+    transition: all 0.3s;
+}
+
+.featureCard1:hover,
+.featureCard2:hover{
+    scale: 1.02;
+    box-shadow: rgb(0, 186, 124) 0px 0px 20px;
+}
+
+.featureCard2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgb(160, 160, 160) 0px 0px 10px;
+    padding: 1.5vw;
+    margin-top: 4vw;
+    transition: all 0.4s;
+}
+
+.featureCardIcon{
+    background-color: rgb(0, 186, 124);
+    margin: auto;
+    padding: 30px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+.featureCardTitle{
+    margin: 1vw 0vw;
+    display: flex;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    justify-content: center;
+}
+.featureCardContent{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.usecaseTitle{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+
+.usecaseGrid{
+    position: relative;
+    display: grid;
+    gap: 4vw;
+    margin: 0px 4vw;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 4vw;
+}
+
+.usecase{
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    border-radius: 6px;
+    margin: auto;
+    box-shadow: 0px 5px 20px black;
+}
+
+#usecase1{
+    background-image: url("/public/trip.jpg");
+    background-size: cover;
+}
+#usecase2{
+    background-image: url("/public/roommates.jpg");
+    background-size: cover;
+}
+#usecase3{
+    background-image: url("/public/dining.jpg");
+    background-size: cover;
+}
+#usecase4{
+    background-image: url("/public/club.jpg");
+    background-size: cover;
+}
+
+.usecaseHover{
+    transition: all 0.4s;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* border: 2px solid black; */
+    border-radius: 6px;
+}
+.usecaseHover:hover{
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.usecaseHover div{
+    color: transparent;    
+    transition: all 0.4s;
+    font-size: 2rem;
+    padding: 2vw;
+    font-weight: bold;
+}
+
+.usecaseHover:hover div{
+    color: white;
+    
+}
+
+.footerSmall{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(1, 168, 112, 0.777);
+    padding: 0.4vw;
+    color: white;
+    border-top: 1px solid white;
+}
+
+#fci1{
+    background-image: url(/public/expense.png);
+    padding: 2vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+#fci2{
+    background-image: url(/public/split.png);
+    padding: 2vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+#fci3{
+    background-image: url(/public/budgeting.png);
+    padding: 2vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+#fci4{
+    background-image: url(/public/management.png);
+    padding: 2vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
