@@ -35,7 +35,7 @@ exports.inviteMember = async (req, res) => {
 
                 const token = jwt.sign({ userId: newUser._id, groupId: groupId, groupName: group.groupName }, process.env.SECRET_KEY)
 
-                const link = `http://localhost:3000/invitation?token=${token}&groupName=${group.groupName}`
+                const link = `https://expensia-frontend.vercel.app/invitation?token=${token}&groupName=${group.groupName}`
 
                 const mailOptions = {
                     from: 'expensia.official@gmail.com',
