@@ -1,9 +1,10 @@
 const cors = require('cors');
 
 const corsOptions = {
-    origin: 'https://expensia-frontend.vercel.app/',
+    origin: 'https://expensia-frontend.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    optionsSuccessStatus: 200
+    preflightContinue: false,
+    optionsSuccessStatus: 204
 };
 
 module.exports = cors(corsOptions);
