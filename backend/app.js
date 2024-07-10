@@ -4,6 +4,7 @@ const errorHandler = require('./middlewares/errorHandler');
 const logger = require('./utils/logger');
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+const setHeaders = require('./middlewares/setHeaders');
 const corsMiddleware = require('./middlewares/cors');
 const userRoutes = require('./routes/userRoutes');
 const groupRoutes = require('./routes/groupRoutes');
@@ -16,6 +17,7 @@ connectDB();
 
 app.use(express.json());
 app.use(logger);
+app.use(setHeaders);
 app.use(corsMiddleware);
 app.options('*', corsMiddleware);
 
