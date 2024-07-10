@@ -25,6 +25,10 @@ app.options('*', corsMiddleware);
 // EXAMPLE
 // app.use('/api/users', require('./routes/userRoutes'));
 
+app.get('/', (req,res) => {
+    res.send("Server is running");
+})
+
 app.use('/expensia/users', userRoutes);
 app.use('/expensia/groups', groupRoutes);
 app.use('/expensia/invite', inviteRoutes);
