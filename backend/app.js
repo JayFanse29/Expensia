@@ -17,6 +17,8 @@ connectDB();
 app.use(express.json());
 app.use(logger);
 app.use(corsMiddleware);
+app.options('*', corsMiddleware);
+
 
 // EXAMPLE
 // app.use('/api/users', require('./routes/userRoutes'));
