@@ -78,6 +78,7 @@ function LoginWindow(props) {
     const checkLogin = async (loginData) => {
         const response = await fetch('https://expensia-backend.vercel.app/expensia/users/login', {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json' 
             },
