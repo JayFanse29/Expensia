@@ -25,7 +25,7 @@ function SettleUp(props) {
 
         console.log(transaction);
 
-        const response = await fetch(`http://localhost:5000/expensia/transactions/settle`,{
+        const response = await fetch(`https://expensia-backend.vercel.app/expensia/transactions/settle`,{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

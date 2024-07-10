@@ -21,7 +21,7 @@ function Invitation() {
 
     const acceptInvitation = async () => {
 
-        const response = await fetch('http://localhost:5000/expensia/invite/accept', {
+        const response = await fetch('https://expensia-backend.vercel.app/expensia/invite/accept', {
           method: 'GET',
           headers: {
             'Authorization': `${token}`,

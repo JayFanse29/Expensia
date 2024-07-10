@@ -17,7 +17,7 @@ function GroupPaymentCard(props) {
             const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
             const monthName = monthNames[monthIndex].toUpperCase();
             const fetchPayerName = async () => {
-                const response = await fetch(`http://localhost:5000/expensia/users/name?userId=${props.expense.payer}`);
+                const response = await fetch(`https://expensia-backend.vercel.app/expensia/users/name?userId=${props.expense.payer}`);
                 const data = await response.json();
                 setPayerName(data.name);
             }

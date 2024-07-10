@@ -11,7 +11,7 @@ function TransactionLog(props) {
       if (props.transactionLog) {
         const transactionIds = props.transactionLog;
         const transactionPromises = transactionIds.map(async (transactionId) => {
-          const response = await fetch(`http://localhost:5000/expensia/transactions/transactionLog?transactionId=${transactionId}`);
+          const response = await fetch(`https://expensia-backend.vercel.app/expensia/transactions/transactionLog?transactionId=${transactionId}`);
           const data = await response.json();
           if (data.exists) {
             return data.transaction;

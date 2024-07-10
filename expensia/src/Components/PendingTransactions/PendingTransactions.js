@@ -23,7 +23,7 @@ function PendingTransactions(props) {
             setGroupMemberIds(props.groupInfo.members);
 
             const memberNamesPromises = props.groupInfo.members.map(async (groupMember) => {
-                const response = await fetch(`http://localhost:5000/expensia/users/name?userId=${groupMember}`);
+                const response = await fetch(`https://expensia-backend.vercel.app/expensia/users/name?userId=${groupMember}`);
                 const data = await response.json();
                 return data.name;
             });

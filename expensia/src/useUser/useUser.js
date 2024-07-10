@@ -12,7 +12,7 @@ const useUser = (token) => {
         setLoading(true);
         if(token)
         {
-            const response = await fetch(`http://localhost:5000/expensia/users/profile`, {
+            const response = await fetch(`https://expensia-backend.vercel.app/expensia/users/profile`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `${token}`,

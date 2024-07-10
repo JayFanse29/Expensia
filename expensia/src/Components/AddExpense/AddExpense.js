@@ -20,7 +20,7 @@ function AddExpense(props) {
                 setGroupMemberIds(props.groupMembers);
 
                 const memberNamesPromises = props.groupMembers.map(async (groupMember) => {
-                    const response = await fetch(`http://localhost:5000/expensia/users/name?userId=${groupMember}`);
+                    const response = await fetch(`https://expensia-backend.vercel.app/expensia/users/name?userId=${groupMember}`);
                     const data = await response.json();
                     return data.name;
                 });
@@ -103,7 +103,7 @@ function AddExpense(props) {
                 groupId: props.groupId
             }
 
-            const response = await fetch(`http://localhost:5000/expensia/expense/add`, {
+            const response = await fetch(`https://expensia-backend.vercel.app/expensia/expense/add`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

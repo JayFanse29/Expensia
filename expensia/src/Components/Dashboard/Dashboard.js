@@ -34,7 +34,7 @@ function Dashboard(props) {
             members: [user._id]
         }
 
-        const response = await fetch("http://localhost:5000/expensia/groups/create", {
+        const response = await fetch("https://expensia-backend.vercel.app/expensia/groups/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -58,7 +58,7 @@ function Dashboard(props) {
 
     const deleteGroup = async (delGroupId) => {
 
-        const response = await fetch(`http://localhost:5000/expensia/groups/delete?groupId=${delGroupId}`);
+        const response = await fetch(`https://expensia-backend.vercel.app/expensia/groups/delete?groupId=${delGroupId}`);
 
         const data = await response.json();
         

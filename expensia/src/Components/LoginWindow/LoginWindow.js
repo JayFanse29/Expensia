@@ -76,7 +76,7 @@ function LoginWindow(props) {
     }
 
     const checkLogin = async (loginData) => {
-        const response = await fetch('http://localhost:5000/expensia/users/login', {
+        const response = await fetch('https://expensia-backend.vercel.app/expensia/users/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json' 
@@ -136,7 +136,7 @@ function LoginWindow(props) {
 
     const createUser = async (userData) => {
         try{
-            const response = await fetch('http://localhost:5000/expensia/users/create', {
+            const response = await fetch('https://expensia-backend.vercel.app/expensia/users/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json'

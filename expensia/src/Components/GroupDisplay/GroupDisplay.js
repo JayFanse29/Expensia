@@ -39,7 +39,7 @@ function GroupDisplay(props) {
                 }
 
                 const fetchOwner = async () => {
-                    const response = await fetch(`http://localhost:5000/expensia/users/name?userId=${props.displayGroup.owner}`);
+                    const response = await fetch(`https://expensia-backend.vercel.app/expensia/users/name?userId=${props.displayGroup.owner}`);
             
                     const data = await response.json();
                     setOwnerName(data.name);
@@ -49,7 +49,7 @@ function GroupDisplay(props) {
                     if (props.displayGroup) {
                       const expenseIds = props.displayGroup.expenses;
                       const expensePromises = expenseIds.map(async (expenseId) => {
-                        const response = await fetch(`http://localhost:5000/expensia/expense/get?expenseId=${expenseId}`);
+                        const response = await fetch(`https://expensia-backend.vercel.app/expensia/expense/get?expenseId=${expenseId}`);
                         const data = await response.json();
                         if (data.exists) {
                           return data.expense;
@@ -94,7 +94,7 @@ function GroupDisplay(props) {
                 group: groupInfo._id
             }
 
-            const response = await fetch('http://localhost:5000/expensia/invite', {
+            const response = await fetch('https://expensia-backend.vercel.app/expensia/invite', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
